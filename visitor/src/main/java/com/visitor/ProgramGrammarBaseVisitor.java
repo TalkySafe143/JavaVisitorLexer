@@ -1,4 +1,5 @@
 // Generated from ProgramGrammar.g4 by ANTLR 4.13.0
+package com.visitor;
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**

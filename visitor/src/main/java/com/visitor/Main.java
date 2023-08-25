@@ -1,4 +1,4 @@
-package org.example;
+package com.visitor;
 
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.ParseTree;
@@ -13,10 +13,8 @@ public class Main {
         ProgramGrammarLexer lexer = new ProgramGrammarLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         ProgramGrammarParser parser = new ProgramGrammarParser(tokens);
-
         ParseTree tree = parser.program();
-
         EvalVisitor eval = new EvalVisitor();
-        eval.visit(tree);
+        System.out.println(eval.visit(tree));
     }
 }

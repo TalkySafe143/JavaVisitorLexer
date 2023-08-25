@@ -63,16 +63,9 @@ decimal: LPAREN floatStatement RPAREN
 // TODO: Operaciones permitidas con
 // INT | float y permitidas con string
 operationStatement: 
-(INT| decimal | ID)
-(PLUS
-| MINUS
-| TIMES
-| DIV
-| MOD
-| POW) 
-(INT 
-| decimal 
-| operation | ID);
+(INT| decimal | ID | FLOAT)
+(PLUS | MINUS | TIMES | DIV | MOD | POW)
+(INT | decimal | operation | ID | FLOAT);
 
 
 operation: LPAREN 

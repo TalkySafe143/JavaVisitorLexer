@@ -1,4 +1,4 @@
-// Generated from ProgramGrammar.g4 by ANTLR 4.13.0
+package com.visitor;// Generated from ProgramGrammar.g4 by ANTLR 4.13.0
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
